@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ######################### html element styling ########################### */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.53em;
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+
+}
+
+
+/* #################################### utility class ########################## */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333333;
+
+}
+
+.text-gray{
+    color: #555555;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: #f4f4f4;
+    border-radius: 100px;
+}
+
+.btn-primary:hover{
+    background: #ddd;
+}
+
+.btn-secondary{
+    border: 2px solid #e63946;
+    border-radius: 100px;
+}
+
+.btn-secondary:hover{
+    background: #ddd;
+}
+
+
+
+/* #################################### utility class end ########################## */
+
+
+
+/* ############################################# header styling ######################## */
+
+
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ,url('../img/header-image.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-items a,
+.nav-bar a:visited{
+    color: #f4f4f4;
+}
+
+.nav-bar a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.header .logo{
+    float: left;
+}
+
+.header .nav-bar .nav-items{
+    float: right;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.header .nav-bar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.nav-bar::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+
+/* ############################################# header styling end ######################## */
+
+
+
+
+/* ############################################# header contant styling ######################## */
+.header-contant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+
+.header-contant h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-contant p{
+    text-transform: uppercase;
+}
+
+
+/* ############################################# header contant styling end ######################## */
+
+
+/* ############################################# show case styling ######################## */
+
+.showcase{
+    background-color: #ddd;
+    padding:10rem 0
+}
+
+.row{
+    height: 350px;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+.row:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+}
+
+.row1{
+    margin-bottom: 10rem;
+    
+}
+
+.row1 .imgbox, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row1 .text-box, .row2 .imgbox{
+    float: right;
+    width: 50%;
+}
+
+.row .imgbox{   
+   height: 100%;
+}
+
+.row .text-box{
+    height: 100%;
+    padding: 3rem;
+    text-transform: uppercase;
+}
+
+.row .imgbox img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+row::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/* ################################# feature styling #################################### */
+
+.features{
+    padding: 10rem 0;
+    
+}
+
+.box-wrapper{
+   
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.301);
+
+}
+
+.box{
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+    padding: 2rem;
+}
+
+.box1,.box3{
+    background-color: #263238;
+    color: #fff;
+    
+}
+
+.box2{
+     background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114)); ;
+    color: #fff;
+
+}
+
+.box-wrapper::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+
+
+/* ########################### footer styling ###################################### */
+
+.footer{
+    background-color: #262626;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+
+
+/* ############################# media queries ################################# */
+
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+
+    }
+
+    .header .logo,.header .nav-bar .nav-items{
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .header-contant h1{
+        display: none;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .imgbox,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box2,
+    .features .box3{
+        margin-top: 7rem;
+
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+    }
+
+   
+}
+
+@media (min-width:501px) and (max-width:768px){
+    html{
+        font-size: 50%;
+
+    }
+    p{
+        font-size: 1.8rem;
+    }
+
+    .header .logo,.header .nav-bar .nav-items{
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .imgbox,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box2,
+    .features .box3{
+        margin-top: 7rem;
+
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+    }
+}
+
+
+@media(min-width:769px) and (max-width:1200px){
+    html{
+        font-size: 56.25%;
+    }
+
+    .row .text-box h2{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+}
+
+@media(orientation: landscape) and(max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
